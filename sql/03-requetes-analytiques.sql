@@ -1,3 +1,6 @@
+-- Les tables normalisées sont dans public, la table brute importée dans sae_qualite_air
+SET search_path = public, sae_qualite_air;
+
 -- ============================================================
 -- SAE S2.04 - PARTIE 2 : Requetes analytiques
 -- ============================================================

@@ -4,6 +4,8 @@ Conception d'une base PostgreSQL à partir du jeu de données ouvert ATMO sur l'
 
 **Auteurs :** Mamadou Bailo BARRY et Djawad TOURE ISSAHOU
 
+![Classement des départements par indice moyen de qualité de l'air, requête avec fonction de fenêtre rank()](docs/capture.png)
+
 ## Contenu
 
 | Dossier | Contenu |
@@ -37,6 +39,8 @@ psql -d qualite_air -f sql/01-creation-tables.sql
 psql -d qualite_air -f sql/02-migration.sql
 psql -d qualite_air -f sql/03-requetes-analytiques.sql
 ```
+
+Résultat attendu après la migration : 17 995 mesures, 4 039 villes, 101 départements.
 
 Pour l'analyse : `jupyter notebook analyse/analyse-qualite-air.ipynb` depuis le dossier `analyse/`.
 
